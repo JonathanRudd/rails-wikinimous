@@ -1,0 +1,11 @@
+<h1>show</h1>
+<article>
+  <h2><%= @article.title %></h2>
+  <%= @article.content %>
+  <%= link_to article_path(@article), method: :delete, data: { confirm: 'Are you sure?'} do %>
+    <i class="fa fa-trash-o"></i>
+  <% end %>
+
+    <hr>
+
+</article>
